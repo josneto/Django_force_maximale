@@ -15,18 +15,13 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-g*w1t9h-@z$hu22c!p&2)c4c^hn%&$pan83+s@@zd@p-b(al%n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['force-maximale-qxqc1p1kc-josneto.vercel.app', '127.0.0.1']
+ALLOWED_HOSTS = ['force-maximale.vercel.app', '127.0.0.1']
 
 
 # Application definition
