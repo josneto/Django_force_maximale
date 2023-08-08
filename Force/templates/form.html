@@ -1,0 +1,22 @@
+<form method="post">
+    {% csrf_token %}
+    <label for="{{ form.Largeur.id_for_label }}">Largeur (mm):</label>
+    {{ form.Largeur }}
+    <br>
+    <label for="{{ form.RM.id_for_label }}">RESISTANCE MAXIMALE:</label>
+    {{ form.RM }}
+    <br>
+    <label for="{{ form.Thickness.id_for_label }}">Epaisseur (mm):</label>
+    {{ form.Thickness }}
+    <br>
+    <button type="submit">Predict</button>
+  </form>
+  
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
